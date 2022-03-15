@@ -1,0 +1,28 @@
+{
+    "name": "webpreview",
+    "version": "1.1.0",
+    "description": "A web-preview app",
+    "main": "main.js",
+    "license": "MIT",
+    "author": "palo-landrae",
+    "scripts": {
+        "start": "electron .",
+        "dist": "electron-builder"
+    },
+    "devDependencies": {
+        "electron": "^17.1.0",
+        "electron-builder": "^22.14.13"
+    },
+    "build": {
+        "appId": "com.palo-landrae.app",
+        "productName": "Web Preview",
+        "target": "NSIS",
+        "nsis": {
+            "allowToChangeInstallationDirectory": true,
+            "oneClick": false
+        }
+    },
+    "dependencies": {
+        "electron-prompt": "^1.7.0"
+    }
+}
